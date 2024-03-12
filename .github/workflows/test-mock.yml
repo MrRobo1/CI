@@ -1,0 +1,17 @@
+name: 1 - test mock back
+
+on:
+  push:
+    branches: ["1-mock-livres"]
+
+jobs:
+  test:
+    name: 🪠Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🤩 Checkout repo
+        uses: actions/checkout@v3
+
+      - name: 🧪 Installation des dependances
+        run: npm install
